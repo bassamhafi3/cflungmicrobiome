@@ -1,5 +1,5 @@
-# This script performs correlation and network analysis on publicly available microbiome data
-# from the following studies:
+# This script performs correlation and network analysis on publicly available 
+# CF respiratory microbiome data from the following studies:
 # https://doi.org/10.1128/jcm.00432-15
 # https://doi.org/10.1128/jcm.00432-15
 # https://doi.org/10.1371/journal.ppat.1006798
