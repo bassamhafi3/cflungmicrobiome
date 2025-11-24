@@ -18,8 +18,7 @@
 # https://doi.org/10.1128/spectrum.00787-24
 # https://doi.org/10.1172/JCI167957
 # https://doi.org/10.1002/alr.23288
-# This analysis computes Spearman correlation matrices, generates heatmaps,
-# and builds correlation networks with community detection.
+# This analysis computes Spearman correlation matrices, generates heatmaps, and builds correlation networks with community detection.
 
 # Load packages
 library(igraph)
