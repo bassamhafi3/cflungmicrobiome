@@ -63,6 +63,17 @@ generate_abundance_plot <- function(
     arrange(desc(Ab)) %>%
     head(15)
   
+  # Calculate total relative abundance
+  top15$Ab_reverted <- 10^top15$Ab
+  total_abundance <- sum(10^filtered$Ab)
+  
+  # Calculate cumulative & percent relative abundance for top 15 genera
+  top15_abundance <- sum(top15$Ab_reverted)
+  percentage_top15 <- (top15_abundance / total_abundance) * 100
+  
+  print(paste("Percentage relative abundance of top 15 genera:", round(percentage_top15, 2), "%"))
+  
+  # Prepare for plotting
   top15$Genus <- factor(top15$Genus, levels = top15$Genus)
   label_data <- top15 %>% filter(Genus %in% label_genera)
   
